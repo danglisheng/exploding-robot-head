@@ -19,17 +19,59 @@ body {
 
 .robot {
   width: 320px;
+  position:relative;
+  margin:0 auto;
+  
 }
 
 .robot-body {
+  display: block;
   width: 320px;
-}
+   padding-top:55px;}
 
+.robot-brain,
+.robot-head-right,
+.robot-head-left {
+  transition:all .5s ease-in-out;
+}
 .robot-brain {
   width: 46px;
+  position:absolute;
+  left:137px;
+  bottom:100px;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+    position:absolute;
 }
+.robot-head-left {
+  bottom:52px;
+  left:35px;
+}
+.robot-head-right {
+  bottom:52px;
+  left:160px;
+}
+.robot:hover .robot-head-right,
+.robot:hover .robot-head-left {
+  bottom:65px;
+  }
+.robot:hover .robot-head-left {
+  left:0;
+}
+.robot:hover .robot-head-right {
+  left:195px;
+}
+.robot:hover .robot-brain {
+  bottom:127.5px;
+}
+
+
+
+
+
+
+
+
